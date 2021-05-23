@@ -18,6 +18,10 @@ typedef u32      b32;
 typedef float    r32;
 typedef double   r64;
 
+#define function static
+#define global   static
+#define internal static
+
 #define ArrayLength(x) (sizeof (x) / sizeof (x)[0])
 
 #if defined(DEBUG)
