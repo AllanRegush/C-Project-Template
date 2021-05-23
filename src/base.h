@@ -21,7 +21,7 @@ typedef double   r64;
 #define ArrayLength(x) (sizeof (x) / sizeof (x)[0])
 
 #if defined(DEBUG)
-#define Assert(x) if(!(x) { *(int*)0 = 0); }
+#define Assert(x) if(!(x)) { *(int*)0 = 0); }
 #else
 #define Assert(x)
 #endif
